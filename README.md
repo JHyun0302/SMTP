@@ -1,9 +1,10 @@
 ## 실행 전 추가 파일
 
-**src/resources/application-mail.yml** 파일을 생성하고 아래 내용을 넣어주세요!
+**src/resources/** 아래 아래 2개 파일을 생성하고 아래 내용을 넣어주세요!
 
-### applcication-mail.yml
-```
+### src/resources/application-naverMail.yml
+
+``` yml
 spring:
   mail:
     host: smtp.naver.com
@@ -20,6 +21,24 @@ spring:
             enable: true
           ssl:
             trust: smtp.naver.com
+            enable: true
+        debug: true
+```
+
+### src/resources/application-googleMail.yml
+
+``` yml
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${google.id}@gmail.com  # 구글 아이디
+    password: ${google.Password}  # 구글 비밀번호
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
             enable: true
         debug: true
 ```
