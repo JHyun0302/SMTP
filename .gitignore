@@ -38,4 +38,5 @@ out/
 
 
 ### mail configuration ###
-application-mail.yml
+application-googleMail.yml
+application-naverMail.yml
