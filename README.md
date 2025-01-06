@@ -9,7 +9,7 @@ spring:
   mail:
     host: smtp.naver.com
     port: 465
-    username: ${naver.Id}  # 네이버 아이디
+    username: ${naver.Id}@naver.com  # 네이버 아이디
     password: ${naver.Password}  # 네이버 비밀번호
     properties:
       mail:
